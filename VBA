@@ -1,0 +1,14 @@
+Option Explicit 
+ 
+ 
+Private Sub UserForm_Initialize() 
+    Dim NextNum As Long 
+     
+    NextNum = Application.WorksheetFunction.Max(Sheet1.UsedRange.Columns(1)) 
+     
+    Me.TextBox1.Value = NextNum 
+    Me.TextBox1.Enabled = False 
+     
+     'or
+    Me.Label1.Caption = NextNum+1 
+End Sub 
