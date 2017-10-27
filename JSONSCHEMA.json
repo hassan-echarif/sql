@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#", 
+  "additionalProperties": false, 
+  "definitions": {}, 
+  "id": "http://example.com/example.json", 
+  "properties": {
+    "iceServers": {
+      "additionalItems": false, 
+      "id": "/properties/iceServers", 
+      "items": {
+        "additionalProperties": false, 
+        "id": "/properties/iceServers/items", 
+        "properties": {
+          "credential": {
+            "id": "/properties/iceServers/items/properties/credential", 
+            "type": "string"
+          }, 
+          "url": {
+            "id": "/properties/iceServers/items/properties/url", 
+            "type": "string"
+          }, 
+          "username": {
+            "id": "/properties/iceServers/items/properties/username", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "type": "array"
+    }
+  }, 
+  "type": "object"
+}
